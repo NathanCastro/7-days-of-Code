@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>    
+    <div class="cabecalho">
+     <p>Vc quer Frontend ou Backend?</p>
+    </div>
+    <label for="nome">Informe:</label>
+    <input type="text" name="name" id="name">
+    <button type="submit" onclick="validar()">validar</button >
+    
+    <div class="divFront divHidden">
+        <label for="nome">Informe Angular ou React:</label>
+        <input type="text" id="sumir">
+        <button type="submit" onclick="enviarFront()">Enviar</button>
+    </div>
+    <div class="divBack divHidden">
+        <label for="nome">Informe C# ou Java:</label>
+        <input type="text" id="sumir">
+        <button type="submit" onclick="enviarBack()">Enviar</button>
+    </div>
+    <p id="valorDigitado"></p>
+    <script src="exercicio3.js"></script>
+</body>
+
+</html>
