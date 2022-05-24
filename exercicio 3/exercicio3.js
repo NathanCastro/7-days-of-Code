@@ -5,7 +5,7 @@ function validar(){
     if (nomeTecnologia == "") {
         alert("Favor informar a tecnologia!");          
     }else if(nomeTecnologia == "frontend" || nomeTecnologia == "front"){
-        let framework = prompt('Angular ou React')
+        let framework 
         
         if(framework == 'angular' ){           
             document.getElementById('valorDigitado').innerHTML = `parabens pelo bom gosto`
@@ -31,5 +31,15 @@ function validar(){
 
     else {
         alert("Colocar a resposta da pergunta");
+    }
+    Mudarestado()
+}
+
+function Mudarestado(el) {
+    var display = document.getElementById(el).style.display;
+    if (display == "none"){
+      document.getElementById(el).style.display = 'block';
+    }else{
+      document.getElementById(el).style.display = 'none';
     }
 }
