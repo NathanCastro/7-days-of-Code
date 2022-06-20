@@ -3,10 +3,12 @@ function validar(){
     document.getElementById('name').value ='';
 
     if (nomeTecnologia == "") {
-        alert("Favor informar a tecnologia!");          
+        alert("Favor informar a tecnologia!");   
+
     }else if(nomeTecnologia == "frontend" || nomeTecnologia == "front"){
+       
+        return changeStates();
         let framework 
-        
         if(framework == 'angular' ){           
             document.getElementById('valorDigitado').innerHTML = `parabens pelo bom gosto`
         }else if (framework == 'react'){            
@@ -32,14 +34,14 @@ function validar(){
     else {
         alert("Colocar a resposta da pergunta");
     }
-    Mudarestado()
+    
 }
 
-function Mudarestado(el) {
+function changeStates(el) {
     var display = document.getElementById(el).style.display;
-    if (display == "none"){
+    if (display == "none")
       document.getElementById(el).style.display = 'block';
-    }else{
+    else
       document.getElementById(el).style.display = 'none';
-    }
 }
+

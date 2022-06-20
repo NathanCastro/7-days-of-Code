@@ -16,18 +16,18 @@
     </div>
     <label for="nome">Informe:</label>
     <input type="text" name="name" id="name">
-    <button type="submit" onclick="validar(),Mudarestado('minhaDiv')">validar</button >
+    <button type="submit" onclick="validar(), changeStates('minhaDiv')">validar</button >
     
     <div class="divFront divHidden" id="minhaDiv" style="display:none" >
         <label for="nome">Informe Angular ou React:</label>
         <input type="text" >
         <button type="submit" >Enviar</button>
     </div>
-    <!-- <div class="divBack divHidden" >
+    <div class="divBack divHidden " id="minhaDiv" style="display: none">
         <label for="nome">Informe C# ou Java:</label>
         <input type="text" id="sumir">
         <button type="submit" onclick="enviarBack()">Enviar</button>
-    </div> -->
+    </div>
     <p id="valorDigitado"></p>
     <script src="exercicio3.js"></script>
 </body>
